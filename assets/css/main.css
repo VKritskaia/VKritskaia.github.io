@@ -3789,7 +3789,7 @@ input, select, textarea {
 	display: none;
 	margin-top: 1rem; /* Add spacing between primary content and the hidden section */
 	padding: 0.5rem; /* Optional: Add padding to align with overall design */
-	background-color: #f9f9f9; /* Optional: Slightly different background for better visibility */
+	/* background-color: #f9f9f9; Optional: Slightly different background for better visibility */
 	border-radius: 5px;
 	border: 1px solid #e1e1e1; /* Subtle border to separate the section visually */
   }
@@ -3797,7 +3797,7 @@ input, select, textarea {
   /* Style for the "View More" button */
   .view-more-btn {
 	display: inline-block;
-	margin-top: 1rem; /* Space above the button */
+	/* margin-top: 1rem; Space above the button */
 	padding: 0.5rem 1rem; /* Add some padding for a button-like appearance */
 	background-color: #007BFF; /* Primary button color */
 	color: #fff; /* Text color */
@@ -3822,3 +3822,35 @@ input, select, textarea {
 	  padding: 0.4rem 0.8rem; /* Reduce padding for smaller screens */
 	}
   }  
+
+/* Remove bullet points from lists */
+#exp ul {
+	list-style: none; /* Removes bullets */
+	padding: 0;       /* Removes default padding */
+	margin: 0;        /* Removes default margin */
+  }
+  
+/* Align text to the left */
+#exp ul li {
+text-align: left; /* Aligns text to the left */
+margin-bottom: 1rem; /* Adds spacing between items for better readability */
+}
+
+/* Ensure nested lists also have no bullets */
+#exp ul li ul {
+list-style: none; /* Removes bullets from nested lists */
+margin-left: 0;   /* Aligns nested content with parent list */
+}
+
+/* Optional: Adjust the header text for a clean look */
+#exp h3 {
+text-align: left; /* Align headers to the left */
+margin-bottom: 0.5rem; /* Add some spacing below headers */
+}
+
+/* Optional: Paragraph alignment */
+#exp p {
+text-align: left; /* Align all paragraphs to the left */
+margin-bottom: 1rem; /* Add spacing between paragraphs */
+}
+  
