@@ -120,4 +120,19 @@
 			speed: 1000
 		});
 
+	// View More Toggle Functionality.
+		$('.view-more-btn').on('click', function() {
+			var $this = $(this);
+			var $target = $('#' + $this.data('target'));
+
+			// Toggle visibility of the target content.
+			if ($target.is(':visible')) {
+				$target.slideUp(); // Hide content with animation.
+				$this.text('View More'); // Update button text.
+			} else {
+				$target.slideDown(); // Show content with animation.
+				$this.text('View Less'); // Update button text.
+			}
+		});
+
 })(jQuery);

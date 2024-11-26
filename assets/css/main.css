@@ -29,6 +29,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* Hide the additional content by default */
+.view-more {
+	display: none;
+	margin-top: 10px;
+  }
+  
+  .view-more-btn {
+	background-color: #007BFF;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 4px;
+	margin-top: 10px;
+  }
+  
+  .view-more-btn:hover {
+	background-color: #0056b3;
+  }  
+
 body {
 	line-height: 1;
 }
