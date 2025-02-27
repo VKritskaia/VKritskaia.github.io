@@ -14,20 +14,27 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<header id="header" class="alt" style="text-align: left;">
-					
+		<div id="wrapper">
+			<header id="header" class="alt" style="text-align: center;">
+				<div style="width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+					<div class="profile-image-container" style="width: 170px; height: 170px; border-radius: 50%; overflow: hidden; margin-bottom: 20px;">
+						<img src="images/my_photo.jpg" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
 					<h1>Veronika Kritskaia</h1>
-					<h2><strong>Data Scientist</strong></h2>
-					<a href="mailto:v.kritskaya99@gmail.com" class="icon-container email" style="font-size: 24px; margin-right: 15px;">
-						<i class="fas fa-envelope"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" class="icon-container linkedin" 
-					style="font-size: 24px; margin-left: 15px;">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-					<!-- <a style="text-align: right;"><span class="logo"><img src="images/logo.svg" alt=""/></span></a>	 -->
-				</header>
+					<h2><strong>Data Scientist
+						<a href="mailto:v.kritskaya99@gmail.com" class="icon-container email" style="font-size: 24px; margin-left: 15px;">
+							<i class="fas fa-envelope"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" class="icon-container linkedin" 
+						   style="font-size: 24px; margin-left: 25px;">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</strong></h2>
+					<ul class="actions" style="margin-top: 20px;">
+						<li><a href="resume.pdf" class="button">View my Resume</a></li>
+					</ul>
+				</div>
+			</header>
 				
 				<!-- Nav -->
 					<nav id="nav">
@@ -44,7 +51,7 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
+							<section id="intro" class="main special" style="text-align: center;">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -65,7 +72,7 @@
 							<header class="major">
 								<h2>🛠 Skills & Tools</h2>
 							</header>
-							<div style="line-height: 1.2; text-align: left;">
+							<div style="line-height: 0.1; text-align: left;">
 								<p><strong>Programming:</strong> Python, SQL, R</p>
 								<p><strong>ML & AI:</strong> Machine Learning, Deep Learning, NLP, LLMs, Computer Vision</p>
 								<p><strong>Data & Cloud:</strong> BigQuery, Databricks, AWS/GCP</p>
@@ -79,17 +86,13 @@
 							<header class="major">
 								<h2>📂 Projects</h2>
 							</header>
-							<div class="job" style="text-align: left;">
-								<img src="images/decathlon_logo.png" alt="Decathlon Logo" class="company-logo" 
-								style="width: 80px; height: 60px; border-radius: 10%; margin-right: 15px;">
-			
-								<h3><strong>Data Scientist | Decathlon, NL | July 2023 - present</strong></h3>
-						
+							<div class="job" style="text-align: left; margin-bottom: 30px;"> <h3><strong> <img src="images/decathlon_logo.png" alt="Decathlon Logo" class="company-logo" 
+												  style="width: 60px; height: 35px; border-radius: 10%; margin-right: 15px;">
+												  Data Scientist | Decathlon, NL | July 2023 - present</strong></h3>
 								<div class="project" style="text-align: left;">
-									<h4>Product Assessment using Computer Vision</h4>
-									<p>Developed computer vision-based solution for 
-										automating product quality assessment to enhance circular economy program.</p>
-									<button class="toggle-details">⬇ More</button>
+									<h4><strong>Product Assessment using Computer Vision</strong></h4>
+									<h5>Developed computer vision-based solution for 
+										automating product quality assessment to enhance circular economy program.</h5>
 									<div class="project-details" style="display: none;">
 										<ul>
 											<li>Scraped and labeled extensive datasets, trained and fine-tuned computer vision models 
@@ -104,34 +107,57 @@
 												customer experience.</li>
 										</ul>
 									</div>
-								</div>
-						
-								<div class="project" style="line-height: 1.5; text-align: left;">
-									<h4>Competitive pricing intelligence solution</h4>
-									<p>Collaborated on the development of an AI-powered system that tracks 
-										competitive offerings across various sports to optimize product pricing strategies</p>
 									<button class="toggle-details">⬇ More</button>
-									<div class="project-details" style="display: none;">
-										<ul>
-											<li>Leveraged LLMs and trained models on product technical specifications and visual 
-												features to achieve high-precision matching accuracy.</li>
-											<li>Collaborated closely with sport experts to gather domain expertise, validate matching results, 
-												and continuously improve model performance.</li>
-											<li>Developed a user-friendly Streamlit frontend for efficient expert feedback collection and 
-												presentation of intermediate results to key stakeholders.</li>
-											<li>Successfully replaced manual competitive analysis processes, enabling data-driven pricing 
-												decisions and enhancing company's market competitiveness.</li>
-
-										</ul>
-									</div>
 								</div>
 							</div>
+							<div class="job" style="text-align: left; margin-bottom: 30px; line-height: 1.3;"> <h3><strong>Competitive pricing intelligence solution</strong></h3>
+								<h5>Collaborated on the development of an AI-powered system that tracks 
+									competitive offerings across various sports to optimize product pricing strategies</h5>
+								<div class="project-details" style="display: none;">
+									<ul>
+										<li>Leveraged LLMs and trained models on product technical specifications and visual 
+											features to achieve high-precision matching accuracy.</li>
+										<li>Collaborated closely with sport experts to gather domain expertise, validate matching results, 
+											and continuously improve model performance.</li>
+										<li>Developed a user-friendly Streamlit frontend for efficient expert feedback collection and 
+											presentation of intermediate results to key stakeholders.</li>
+										<li>Successfully replaced manual competitive analysis processes, enabling data-driven pricing 
+											decisions and enhancing company's market competitiveness.</li>
+									</ul>
+								</div>
+								<button class="toggle-details">⬇ More</button>
+							</div>
+
+							<hr><div class="job" style="text-align: left; margin-bottom: 30px;"> <h3><strong> <img src="images/productsup_logo.jpg" alt="Decathlon Logo" class="company-logo" 
+								style="width: 45px; height: 45px; border-radius: 10%; margin-right: 15px;">
+								Jr. Data Scientist | Productsup | Jan 2022 - July 2023</strong></h3>
+								<div class="project" style="text-align: left;">
+									<h4><strong>Automated Product Label Intelligence System</strong></h4>
+									<h5>Contributed to the development of an AI-powered solution using NLP techniques to automate product data
+										labelling process.</h5>
+									<div class="project-details" style="display: none;">
+										<ul>
+											<li>Developed and implemented an AI-powered solution to automate the classification and extraction of 
+												product label content for various brands, significantly reducing manual effort and minimizing human 
+												error in the process.</li>
+											<li>Led the development of a robust data labeling pipeline and trained large language models (LLMs) to 
+												accurately classify text into predefined sections.</li>
+											<li>Collaborated with cross-functional teams to present intermediate results and gather feedback for 
+												continuous improvement.</li>
+											<li>Utilized a combination of OCR and computer vision models to extract product label information with high 
+												accuracy, demonstrating improved speed, robustness, and accuracy compared to manual methods.</li>
+										</ul>
+									</div>
+									<button class="toggle-details">⬇ More</button>
+								</div>
+							</div></hr>
+
 						</section>
-						
+
 						<script>
 							document.querySelectorAll('.toggle-details').forEach(button => {
 								button.addEventListener('click', function() {
-									const details = this.nextElementSibling;
+									const details = this.previousElementSibling; // Changed to previous sibling
 									const isVisible = details.style.display === 'block';
 									details.style.display = isVisible ? 'none' : 'block';
 									this.textContent = isVisible ? '⬇ More' : '⬆ Less';
@@ -143,50 +169,25 @@
 						<!-- Get Started -->
 						<section id="exp" class="main special">
 							<header class="major">
-							  <h2>Experience & Education</h2>
+							  <h2>Education</h2>
 							</header>
-							<div class="content">
-							  <ul>
-								<li style="text-align: left; margin-bottom: 1rem;">
-								  <h3 style="text-align: left;">Some text here</h3>				
-								  <!-- View More Section -->
-								  <div class="view-more" id="view-more-1">
-									<ul>
-									  <li>Some hidden stuff.</li>
-									</ul>
-								  </div>
-								  <button class="view-more-btn" data-target="view-more-1">View More</button>
-								</li>
-
-							  </ul>
-							</div>
 						  </section>						  
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Resume</h2>
-							<!-- <p>Please refer to the link below for resume.</p> -->
-							<ul class="actions">
-								<!-- Add link to downloading a pdf version resume -->
-								<li><a href="resume.pdf" class="button">View my Resume</a></li>
-							</ul>
-						</section>
-
-						<section id="contact" class="main special">
-							<h2>Contact Details</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd style="text-align: left;">Utrecht, the Netherlands</dd>
-								<dt>Phone</dt>
-								<dd style="text-align: left;">+31 614 46 81 64</dd>
-								<dt>Email</dt>
-								<dd style="text-align: left;"><a href="#">v.kritskaya99@gmail.com</a></dd>
-							</dl>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+				<footer id="footer">
+					<section id="contact" class="main special" style="text-align: left;"> 
+						<h2>Contact Details</h2>
+						<dl class="alt">
+							<dt>Address</dt>
+							<dd>Utrecht, NL</dd> 
+							<dt>Phone</dt>
+							<dd>+31 614 46 81 64</dd>
+							<dt>Email</dt>
+							<dd><a href="#">v.kritskaya99@gmail.com</a></dd>
+						</dl>
+					</section>
+				</footer>
 
 			</div>
 
