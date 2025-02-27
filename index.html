@@ -21,13 +21,13 @@
 					<span class="logo"><img src="images/logo.svg" alt="" /></span>
 					<h1>Veronika Kritskaia</h1>
 					<p><strong>Data Scientist</strong>
-						<a href="mailto:v.kritskaya99@gmail.com" class="icon solid fa-envelope alt">
-							<span class="label">Email</span>
-						<a>
-						<a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" class="icon brands fa-linkedin-in alt">
-							<span class="label">LinkedIn</span>
-						</a>
 					</p>
+					<a href="mailto:v.kritskaya99@gmail.com" class="icon solid fa-envelope alt">
+						<span class="label">Email</span>
+					<a>
+					<a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" class="icon brands fa-linkedin-in alt">
+						<span class="label">LinkedIn</span>
+					</a>
 				</header>
 				
 				<!-- Nav -->
@@ -67,13 +67,11 @@
 								<h2>🛠 Skills & Tools</h2>
 							</header>
 							<div style="text-align: left; display: inline-block;">
-								<ul>
-									<li><strong>Programming:</strong> Python, SQL, R</li>
-									<li><strong>ML & AI:</strong> Machine Learning, Deep Learning, NLP, LLMs, Computer Vision</li>
-									<li><strong>Data & Cloud:</strong> BigQuery, Databricks, AWS/GCP</li>
-									<li><strong>MLOps & Deployment:</strong> MLflow, Docker, API development</li>
-									<li><strong>Visualization:</strong> Streamlit, Tableau, Seaborn, Plotly</li>
-								</ul>
+								<p><strong>Programming:</strong> Python, SQL, R</p>
+								<p><strong>ML & AI:</strong> Machine Learning, Deep Learning, NLP, LLMs, Computer Vision</p>
+								<p><strong>Data & Cloud:</strong> BigQuery, Databricks, AWS/GCP</p>
+								<p><strong>MLOps & Deployment:</strong> MLflow, Docker, API development</p>
+								<p><strong>Visualization:</strong> Streamlit, Tableau, Seaborn, Plotly</p>
 							</div>
 						</section>
 
@@ -82,11 +80,14 @@
 							<header class="major">
 								<h2>📂 Projects</h2>
 							</header>
-							<div class="project">
+						
+							<div class="job">
 								<h3>Data Scientist | Decathlon, NL | July 2023 - present</h3>
-								<h4>Product Assessment using Computer Vision</h4>
-								<p>Developed computer vision-based solution for 
-									automating product quality assessment to enhance circular economy program.</p>
+						
+								<div class="project">
+									<h4>Product Assessment using Computer Vision</h4>
+									<p>Developed computer vision-based solution for 
+										automating product quality assessment to enhance circular economy program.</p>
 									<button class="toggle-details">⬇ More</button>
 									<div class="project-details" style="display: none;">
 										<ul>
@@ -103,7 +104,28 @@
 										</ul>
 									</div>
 								</div>
-							</section>
+						
+								<div class="project">
+									<h4>Competitive pricing intelligence solution</h4>
+									<p>Collaborated on the development of an AI-powered system that tracks 
+										competitive offerings across various sports to optimize product pricing strategies</p>
+									<button class="toggle-details">⬇ More</button>
+									<div class="project-details" style="display: none;">
+										<ul>
+											<li>Leveraged LLMs and trained models on product technical specifications and visual 
+												features to achieve high-precision matching accuracy.</li>
+											<li>Collaborated closely with sport experts to gather domain expertise, validate matching results, 
+												and continuously improve model performance.</li>
+											<li>Developed a user-friendly Streamlit frontend for efficient expert feedback collection and 
+												presentation of intermediate results to key stakeholders.</li>
+											<li>Successfully replaced manual competitive analysis processes, enabling data-driven pricing 
+												decisions and enhancing company's market competitiveness.</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
 						
 						<script>
 							document.querySelectorAll('.toggle-details').forEach(button => {
@@ -114,7 +136,8 @@
 									this.textContent = isVisible ? '⬇ More' : '⬆ Less';
 								});
 							});
-						</script>							
+						</script>
+													
 
 						<!-- Get Started -->
 						<section id="exp" class="main special">
