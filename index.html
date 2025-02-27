@@ -20,10 +20,10 @@
 				<header id="header" class="alt">
 					<span class="logo"><img src="images/logo.svg" alt="" /></span>
 					<h1>Veronika Kritskaia</h1>
-					<p><strong>Data Scientist</strong></p>
-					<p>
+					<p><strong>Data Scientist</strong>
 						<a href="mailto:v.kritskaya99@gmail.com" class="icon solid fa-envelope alt">
 							<span class="label">Email</span>
+						<a>
 						<a href="https://www.linkedin.com/in/veronika-kritskaia/" target="_blank" class="icon brands fa-linkedin-in alt">
 							<span class="label">LinkedIn</span>
 						</a>
@@ -62,48 +62,59 @@
 							</section>
 
 						<!-- First Section -->
-						<section id="skills" class="main special" style="text-align: left;">
+						<section id="skills" class="main special" style="text-align: center;">
 							<header class="major">
 								<h2>🛠 Skills & Tools</h2>
 							</header>
-							<ul>
-								<li><strong>Programming:</strong> Python, SQL, R</li>
-								<li><strong>ML & AI:</strong> Machine Learning, Deep Learning, NLP, LLMs, Computer Vision</li>
-								<li><strong>Data & Cloud:</strong> BigQuery, Databricks, AWS/GCP</li>
-								<li><strong>MLOps & Deployment:</strong> MLflow, Docker, API development</li>
-								<li><strong>Visualization:</strong> Streamlit, Tableau, Seaborn, Plotly</li>
-							</ul>
+							<div style="text-align: left; display: inline-block;">
+								<ul>
+									<li><strong>Programming:</strong> Python, SQL, R</li>
+									<li><strong>ML & AI:</strong> Machine Learning, Deep Learning, NLP, LLMs, Computer Vision</li>
+									<li><strong>Data & Cloud:</strong> BigQuery, Databricks, AWS/GCP</li>
+									<li><strong>MLOps & Deployment:</strong> MLflow, Docker, API development</li>
+									<li><strong>Visualization:</strong> Streamlit, Tableau, Seaborn, Plotly</li>
+								</ul>
+							</div>
 						</section>
 
 						<!-- Second Section -->
-							<section id="projects" class="main special">
-								<header class="major">
-									<h2>Projects</h2>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+						<section id="projects" class="main special" style="text-align: left;">
+							<header class="major">
+								<h2>📂 Projects</h2>
+							</header>
+							<div class="project">
+								<h3>Data Scientist | Decathlon, NL | July 2023 - present</h3>
+								<h4>Product Assessment using Computer Vision</h4>
+								<p>Developed computer vision-based solution for 
+									automating product quality assessment to enhance circular economy program.</p>
+									<button class="toggle-details">⬇ More</button>
+									<div class="project-details" style="display: none;">
+										<ul>
+											<li>Scraped and labeled extensive datasets, trained and fine-tuned computer vision models 
+												for accurate product quality assessment, ensuring high performance and generalizability.</li>
+											<li>Collaborated closely with sport experts to gather domain expertise, validate model performance, 
+												and refine training data.</li>
+											<li>Supervised and mentored junior team members, including interns, 
+												on data labeling tasks and project methodologies.</li>
+											<li>Successfully deployed the computer vision model, streamlining the product assessment process and 
+												enhancing efficiency, accuracy, and customer experience. This contributed to Decathlon's sustainable 
+												business model by: reducing assessment time, improving accuracy, enhancing consistency, improving 
+												customer experience.</li>
+										</ul>
+									</div>
+								</div>
 							</section>
+						
+						<script>
+							document.querySelectorAll('.toggle-details').forEach(button => {
+								button.addEventListener('click', function() {
+									const details = this.nextElementSibling;
+									const isVisible = details.style.display === 'block';
+									details.style.display = isVisible ? 'none' : 'block';
+									this.textContent = isVisible ? '⬇ More' : '⬆ Less';
+								});
+							});
+						</script>							
 
 						<!-- Get Started -->
 						<section id="exp" class="main special">
